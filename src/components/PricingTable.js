@@ -17,7 +17,8 @@ const useStyles = makeStyles({
     maxWidth: 380,
     height: 390,
     borderRadius: '32px',
-    backgroundColor: '#222b36'
+    backgroundColor: '#222b36',
+    margin: "auto"
   },
   header: {
     height: 100,
