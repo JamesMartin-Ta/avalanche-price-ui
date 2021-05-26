@@ -5,7 +5,7 @@ const Info = () => {
   
   return (
     <div>
-      <Typography>Tu es fezfe</Typography>
+      <Typography>Coming soon</Typography>
     </div>
   );
 }
