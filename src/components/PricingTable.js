@@ -10,7 +10,9 @@ import RefreshIcon from '@material-ui/icons/Refresh';
 
 const useStyles = makeStyles({
   flexG: {
-    floxGrow: 1
+    floxGrow: 1,
+    maxWidth: '1500px',
+    margin: 'auto'
   },
   root: {
     minWidth: 275,
@@ -18,7 +20,7 @@ const useStyles = makeStyles({
     height: 390,
     borderRadius: '32px',
     backgroundColor: '#222b36',
-    margin: "auto"
+    margin: 'auto'
   },
   header: {
     height: 100,
@@ -51,7 +53,7 @@ const PricingTable = () => {
         let allPrices = [];
         responses.map((response, index) => {
           allPrices = [...allPrices, response.data];
-          return <React.Fragment key={`1${index}`} />
+          return <React.Fragment key={`1${index}`} />;
         });
         setTokens(allPrices);
       });
@@ -93,7 +95,11 @@ const PricingTable = () => {
                   alignItems='center'
                 >
                   <Typography variant='h1'>{token.tokenName}</Typography>
-                  <img src={token.logo} className={classes.logo} alt={token.targetTokenSymbol}/>
+                  <img
+                    src={token.logo}
+                    className={classes.logo}
+                    alt={token.targetTokenSymbol}
+                  />
                 </Box>
                 <Box
                   marginTop='50px'
